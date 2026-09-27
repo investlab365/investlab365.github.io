@@ -34,6 +34,8 @@ python3 refresh_quotes.py
 python3 refresh_history.py
 ```
 
+GitHub Pages 的快照由 GitHub Actions 每个工作日 **15:15（北京时间）**自动更新报价和历史日线。只有行情或历史数据发生变化时，Actions 才会提交 JSON 并重新部署页面；可以在 GitHub 的 Actions 页面手动运行同一工作流立即更新。行情接口可能延迟或不可用，页面仍以数据中的报价时间为准。
+
 ## 目前两只股票的研究口径
 
 **中际旭创 300308.SZ**：用户提供 2026 Q3、Q4、2027 Q1、Q2 归母净利润预测 **95、130、155、180 亿元**，合计 **560 亿元**。基准预估 PE **26×**，估值下沿与上沿为基准市值 ±20%，对应 **11,648 / 14,560 / 17,472 亿元**。2026 Q1 实际值 **57.35 亿元**来自[一季报](https://static.cninfo.com.cn/finalpage/2026-04-17/1225111941.PDF)；Q2 **79.17 亿元**由[半年报](https://static.cninfo.com.cn/finalpage/2026-08-22/1225491753.PDF)的上半年累计减 Q1 得到。研究利润和 PE 并非公司指引。2026 年股本变化按公司公告生效日维护在 `shareSteps`。
@@ -51,4 +53,4 @@ python3 refresh_history.py
 
 ## GitHub Pages 部署
 
-推送到 `main` 会触发 `.github/workflows/deploy.yml`，将页面和 `data/` 下的行情快照部署到 `https://investlab365.github.io/`。GitHub Pages 是静态托管，不能运行这里的 Python 行情服务；线上刷新按钮会读取仓库里的已保存快照，更新时间以报价时间为准，不会在访客浏览器中直连实时行情接口。更新线上快照时，在本地运行 `python3 refresh_quotes.py` 和 `python3 refresh_history.py`，再提交并推送生成的 JSON 文件。
+推送到 `main` 会触发 `.github/workflows/deploy.yml`，将页面和 `data/` 下的行情快照部署到 `https://investlab365.github.io/`。GitHub Pages 是静态托管，不能运行这里的 Python 行情服务；线上刷新按钮会读取已发布快照，不会在访客浏览器中直连行情接口。GitHub Actions 会在工作日下午 3:15（北京时间）抓取报价与历史日线、保存有变化的数据并部署页面。

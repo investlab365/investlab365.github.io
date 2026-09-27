@@ -4,25 +4,71 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
-
-permissions:
-  contents: read
-  pages: write
-  id-token: write
+  schedule:
+    - cron: '15 15 * * 1-5'
+      timezone: 'Asia/Shanghai'
 
 concurrency:
   group: github-pages
   cancel-in-progress: false
 
 jobs:
+  refresh:
+    if: ${{ github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    outputs:
+      sha: ${{ steps.commit.outputs.sha }}
+      changed: ${{ steps.commit.outputs.changed }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+      - name: Refresh quote snapshots
+        run: python refresh_quotes.py
+      - name: Refresh daily history snapshots
+        run: python refresh_history.py
+      - name: Commit refreshed snapshots
+        id: commit
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/
+          if git diff --cached --quiet; then
+            echo 'changed=false' >> "$GITHUB_OUTPUT"
+            echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git commit -m 'Refresh market snapshots'
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main
+          echo 'changed=true' >> "$GITHUB_OUTPUT"
+          echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
   deploy:
+    if: ${{ always() && (needs.refresh.result == 'success' || needs.refresh.result == 'skipped') && (needs.refresh.result == 'skipped' || needs.refresh.outputs.changed == 'true') }}
+    needs: refresh
     runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
     steps:
       - name: Checkout
         uses: actions/checkout@v6
+        with:
+          ref: ${{ needs.refresh.outputs.sha || github.sha }}
       - name: Configure Pages
         uses: actions/configure-pages@v5
       - name: Prepare site files
