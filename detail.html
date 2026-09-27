@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f8f6">
+  <title>个股估值研究 · 估值笔记</title>
+  <link rel="stylesheet" href="./styles.css?v=20260927v">
+</head>
+<body>
+  <div class="shell">
+    <aside class="sidebar">
+      <a class="brand" href="./index.html"><span class="brand-icon">◈</span><span><strong>估值笔记</strong><small>VALUATION STUDIO</small></span></a>
+      <div class="side-caption">工作台</div>
+      <nav aria-label="页面导航">
+        <a href="./index.html">市场总览</a>
+        <a class="selected" href="#valuation">个股详情</a>
+        <a href="#cap-chart">市值与区间</a>
+        <a href="#heatmap-section">盈利 × PE</a>
+        <a href="#data-method">数据口径</a>
+      </nav>
+      <div class="side-caption markets-caption">市场</div>
+      <div class="market-nav"><a id="nav-a" href="./index.html#a-market">A 股</a><a id="nav-us" href="./index.html#us-market">美股 ADR</a></div>
+      <div class="side-bottom">公开研究预览 <span>●</span><small>行情使用保存快照</small></div>
+    </aside>
+    <main id="top">
+      <header class="topbar"><div class="crumb"><a id="market-crumb" href="./index.html">研究池</a> <span>/</span> <span id="crumb-name">个股</span></div><div class="topbar-right"><span class="pill">GitHub Pages</span><button id="refresh" type="button">刷新行情 ↻</button></div></header>
+      <section class="detail-intro"><div><a id="back-link" class="back-link" href="./index.html">← 返回研究池</a><span id="stock-eyebrow" class="eyebrow">EQUITY RESEARCH</span><h1><span id="stock-name">加载中…</span> <small id="stock-market"></small></h1><p id="stock-intro"></p></div></section>
+      <div class="note-strip"><span class="note-dot"></span><p id="valuation-note">正在读取研究数据…</p></div>
+      <section class="section-head" id="valuation"><div><span class="eyebrow">01 / VALUATION MODEL</span><h2 id="valuation-title">未来四个财报季度估值</h2></div><span class="section-tag">研究估值与行情分开更新</span></section>
+      <div class="metrics-grid">
+        <section class="panel lead-metric"><span id="profit-kicker" class="card-kicker">未来约 12 个月归母净利润</span><strong id="forward-profit">—</strong><p id="forecast-period"></p></section>
+        <section class="panel metric"><span id="price-kicker" class="card-kicker">股票价格</span><strong id="a-price">—</strong><p id="a-time">行情加载中</p></section>
+        <section class="panel metric"><span id="shares-kicker" class="card-kicker">总股本</span><strong id="total-shares">—</strong><p id="shares-note"></p></section>
+        <section class="panel metric"><span id="cap-kicker" class="card-kicker">行情总市值</span><strong id="cap-second">—</strong><p id="cap-time">行情加载中</p></section>
+      </div>
+      <section class="section-head" id="cap-chart"><div><span class="eyebrow">02 / MARKET CAP & VALUATION</span><h2>总市值与估值区间</h2></div><span id="chart-unit" class="section-tag"></span></section>
+      <section class="panel history-panel"><div class="panel-title"><div><h3 id="chart-title">行情总市值走势</h3><p>市场曲线与估值下沿、基准估值、估值上沿三条研究线，共用同一坐标轴。</p></div><div class="chart-controls"><button type="button" data-range="1M">1个月</button><button type="button" data-range="3M" class="selected">3个月</button><button type="button" data-range="6M">6个月</button></div></div><div class="history-legend"><span><i class="line-key"></i> <span id="market-legend">行情总市值</span></span><span id="legend-low"><i class="low-key"></i> 估值下沿</span><span id="legend-base"><i class="base-key"></i> 基准估值</span><span id="legend-high"><i class="high-key"></i> 估值上沿</span></div><div class="history-wrap"><svg id="market-history-chart" viewBox="0 0 900 380" role="img" aria-label="行情总市值与三档研究估值线"></svg><div id="history-tooltip" class="history-tooltip" hidden></div></div><p id="history-status" class="fine-print">正在获取历史收盘数据…</p></section>
+      <div class="content-grid">
+        <section class="panel profit-panel"><div class="panel-title"><div><span class="eyebrow">QUARTERLY PROFIT</span><h3 id="profit-panel-title">季度归母净利润</h3><p id="profit-unit"></p></div><div class="chart-controls profit-controls"><button type="button" data-profit-range="latest" class="selected">最近四季</button><button type="button" data-profit-range="all">全部季度</button></div></div><div class="profit-bars" id="profit-bars"></div><div class="profit-legend" id="profit-legend"></div></section>
+        <section class="panel quote-panel"><div class="panel-title"><div><span class="eyebrow">MARKET SNAPSHOT</span><h3 id="quote-title">行情</h3></div></div><div class="quote-line"><span id="quote-price-label">股票价格</span><strong id="quote-a-price">—</strong></div><div class="quote-line"><span id="quote-shares-label">总股本</span><strong id="quote-shares">—</strong></div><div class="quote-line total"><span id="quote-cap-label">总市值</span><strong id="total-cap">—</strong></div><p id="quote-status" class="fine-print">正在获取行情…</p></section>
+      </div>
+      <section class="section-head scenario-head"><div><span class="eyebrow">03 / THREE SCENARIOS</span><h2>三档研究市值</h2></div><span class="formula">未来四个财报季度归母净利润 × 研究 PE</span></section>
+      <div class="scenario-grid" id="scenarios"></div>
+      <section class="section-head" id="heatmap-section"><div><span class="eyebrow">04 / SENSITIVITY</span><h2>盈利 × 估值倍数</h2></div><span class="formula">点击格子查看利润与 PE 变化</span></section>
+      <div class="sensitivity-layout"><section class="panel sensitivity-panel"><div class="panel-title"><div><h3>估值敏感性图</h3><p id="heatmap-period">横轴：未来四个季度利润；纵轴：研究 PE</p></div></div><div class="heatmap-scroll"><div id="heatmap" class="heatmap" role="group" aria-label="盈利与市盈率估值敏感性矩阵"></div></div><div class="heatmap-key"><span>低估值金额</span><i></i><span>高估值金额</span></div><p class="fine-print">每格金额 = 对应利润 × PE。左下绿、居中黄、右上红；颜色仅表示估值金额大小。</p></section><section class="panel insight-panel" id="selected-scenario"><span class="eyebrow">SELECTED SCENARIO</span><h3>选中情景</h3><strong id="selected-value">—</strong><div class="insight-line"><span>预测利润</span><b id="selected-profit">—</b></div><div class="insight-line"><span>目标 PE</span><b id="selected-pe">—</b></div><div class="insight-line"><span>相对行情市值</span><b id="selected-upside">行情加载中</b></div></section></div>
+      <section class="panel position-detail"><div class="panel-title"><div><span class="eyebrow">VALUATION POSITION</span><h3>市值位置</h3></div><span id="position-caption">等待行情</span></div><div class="detail-track"><span id="detail-current" class="detail-marker" hidden><i></i>现市值</span><span id="low-tick" class="range-tick"></span><span id="base-tick" class="range-tick"></span><span id="high-tick" class="range-tick"></span></div><div class="detail-legend"><span>绿 · 低于下沿</span><span>黄 · 基准附近</span><span>红 · 高于上沿</span></div><p class="fine-print">量尺按市值线性定位；估值下沿至上沿是研究区间。相对基准的差距只反映当前模型，行情可能延迟。</p></section>
+      <section class="method" id="data-method"><div class="section-head"><div><span class="eyebrow">05 / DATA METHOD</span><h2>数据与计算口径</h2></div></div><div class="method-grid"><article class="panel"><span>01</span><h3>研究估值</h3><p id="method-valuation"></p><p id="method-actuals"></p></article><article class="panel"><span>02</span><h3>行情总市值</h3><p id="method-market"></p></article><article class="panel"><span>03</span><h3>历史曲线</h3><p id="method-history"></p></article></div><div class="source-list" id="source-list">来源：</div><p class="fine-print" id="method-extra"></p></section>
+      <footer>估值笔记 · GitHub Pages <span>行情与研究预测分别标注来源及时间</span></footer>
+    </main>
+  </div>
+  <script src="./stock-detail.js?v=20260927i"></script>
+  <script src="./stock-charts.js?v=20260927c"></script>
+</body>
+</html>

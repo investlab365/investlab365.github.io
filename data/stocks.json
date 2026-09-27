@@ -1,0 +1,411 @@
+{
+  "schemaVersion": 1,
+  "stocks": [
+    {
+      "symbol": "300308.SZ",
+      "name": "中际旭创",
+      "market": "A 股",
+      "marketKey": "a",
+      "sector": "光模块 / AI 算力",
+      "avatar": "中",
+      "currency": "CNY",
+      "currencySymbol": "¥",
+      "capUnit": "亿",
+      "profitUnit": "亿元",
+      "priceLabel": "A 股价格",
+      "capLabel": "A 股行情总市值",
+      "sharesLabel": "公司总股本",
+      "shareNote": "包含已发行 H 股",
+      "chartLabel": "A 股行情总市值走势",
+      "intro": "查看 A 股行情总市值、研究估值区间及盈利 × PE 敏感性。",
+      "researchNote": "利润预测由用户提供，基准预估 PE 为 26×；估值下沿与上沿为基准 ±20%。",
+      "forecastNote": "用户研究预测，非公司业绩指引",
+      "quoteBasis": "总市值采用 A 股报价 × 公司总股本；行情接口可能延迟。",
+      "historyBasis": "A 股每日收盘价 × 当日公司总股本；股本变动按披露日期处理。",
+      "methodActuals": "2026 Q2 单季值由半年报累计减 Q1 得到。",
+      "valuation": {
+        "researchDate": "2026-09-27",
+        "quarterLabels": [
+          "2026 Q3",
+          "2026 Q4",
+          "2027 Q1",
+          "2027 Q2"
+        ],
+        "quarters": [
+          95,
+          130,
+          155,
+          180
+        ],
+        "actualQuarterProfits": [
+          {
+            "quarter": "2026 Q1",
+            "profitYi": 57.3450152683,
+            "source": "https://static.cninfo.com.cn/finalpage/2026-04-17/1225111941.PDF"
+          },
+          {
+            "quarter": "2026 Q2",
+            "profitYi": 79.1664816644,
+            "source": "https://static.cninfo.com.cn/finalpage/2026-08-22/1225491753.PDF",
+            "method": "2026 半年累计归母净利润 136.5114969327 亿元减去 Q1 57.3450152683 亿元"
+          }
+        ],
+        "forwardFourQuarterProfitYi": 560,
+        "priorValuations": [],
+        "scenarios": [
+          {
+            "key": "low",
+            "label": "估值下沿",
+            "pe": 20.8,
+            "marketCapYi": 11648
+          },
+          {
+            "key": "base",
+            "label": "基准估值",
+            "pe": 26,
+            "marketCapYi": 14560
+          },
+          {
+            "key": "high",
+            "label": "估值上沿",
+            "pe": 31.2,
+            "marketCapYi": 17472
+          }
+        ],
+        "heatmapPe": [
+          34,
+          30,
+          26,
+          22,
+          18
+        ]
+      },
+      "sources": [
+        {
+          "label": "A 股当前行情",
+          "url": "https://qt.gtimg.cn/q=sz300308"
+        },
+        {
+          "label": "A 股历史收盘",
+          "url": "https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sz300308,day,,,180,"
+        },
+        {
+          "label": "公司一季报",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-04-17/1225111941.PDF"
+        },
+        {
+          "label": "公司半年报",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-22/1225491753.PDF"
+        },
+        {
+          "label": "H 股超额配售公告",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-27/1225515675.PDF"
+        }
+      ],
+      "shareSteps": [
+        {
+          "date": "2026-01-01",
+          "shares": 1111118334
+        },
+        {
+          "date": "2026-04-22",
+          "shares": 1113600534
+        },
+        {
+          "date": "2026-06-01",
+          "shares": 1114910191
+        },
+        {
+          "date": "2026-06-08",
+          "shares": 1115234641
+        },
+        {
+          "date": "2026-07-30",
+          "shares": 1169734641
+        },
+        {
+          "date": "2026-08-31",
+          "shares": 1177909641
+        }
+      ],
+      "researchMeta": {
+        "forecastType": "未来四个财报季度归母净利润预测（约未来 12 个月）",
+        "forecastSource": "用户提供的研究假设，非公司业绩指引",
+        "scenarioBandRelative": 0.2,
+        "peStatus": "用户指定基准预估 PE 26 倍；估值下沿与上沿按基准市值 ±20% 推导"
+      }
+    },
+    {
+      "symbol": "SKHY",
+      "name": "SK 海力士",
+      "market": "美股 ADR",
+      "marketKey": "us",
+      "sector": "存储 / HBM / AI 算力",
+      "avatar": "海",
+      "currency": "USD",
+      "currencySymbol": "$",
+      "capUnit": "亿美元",
+      "profitUnit": "亿美元",
+      "priceLabel": "SKHY ADR 价格",
+      "capLabel": "ADR 折算公司总市值",
+      "sharesLabel": "发行后普通股总股数",
+      "shareNote": "1 ADS = 0.1 股普通股",
+      "chartLabel": "SKHY ADR 行情总市值走势",
+      "intro": "查看 ADR 美元行情市值、研究估值区间及盈利 × PE 敏感性。",
+      "researchNote": "2026 Q3—2027 Q2 预测由未来资产证券 2026-06-09 报告的营业利润换算；PE 为本站研究情景。美元金额按 2026-09-25 参考汇率换算。",
+      "forecastNote": "机构营业利润换算，非机构直接发布的季度净利润或市场一致预期",
+      "quoteBasis": "公司整体市值按 SKHY ADR 美元价格 × 普通股股数 ÷ 0.1 折算。股数固定采用招股文件发行后数值，未反映后续回购；ADR 与韩国普通股可能有价差。",
+      "historyBasis": "SKHY ADR 每日收盘价 × 固定发行后普通股数 ÷ 0.1。",
+      "methodActuals": "2026 Q2 包含大额投资资产收益，不直接外推到未来四季。",
+      "shares": 728865500,
+      "adsRatio": 0.1,
+      "fx": {
+        "date": "2026-09-25",
+        "wonPerUsd": 1355.0469174778566
+      },
+      "valuation": {
+        "researchDate": "2026-09-27",
+        "quarterLabels": [
+          "2026 Q3",
+          "2026 Q4",
+          "2027 Q1",
+          "2027 Q2"
+        ],
+        "quarters": [
+          510.8310207357167,
+          597.3224908747314,
+          591.0496453441715,
+          616.9528074762485
+        ],
+        "actualQuarterProfits": [
+          {
+            "quarter": "2026 Q1",
+            "profitYi": 297.6293697274069,
+            "source": "https://www.sec.gov/Archives/edgar/data/2120882/000119312526321989/d115239d6k.htm",
+            "method": "公司披露的归母净利润，按展示汇率换算为美元"
+          },
+          {
+            "quarter": "2026 Q2",
+            "profitYi": 692.3762918455047,
+            "source": "https://www.sec.gov/Archives/edgar/data/2120882/000119312526321989/d115239d6k.htm",
+            "method": "当季包含大额投资资产处置及估值收益；不把该项一次性收益外推到未来四季。"
+          }
+        ],
+        "forwardFourQuarterProfitYi": 2316.155964430868,
+        "priorValuations": [],
+        "scenarios": [
+          {
+            "key": "low",
+            "label": "估值下沿",
+            "pe": 5.6,
+            "marketCapYi": 12970.473400812862
+          },
+          {
+            "key": "base",
+            "label": "基准估值",
+            "pe": 7.0,
+            "marketCapYi": 16213.091751016076
+          },
+          {
+            "key": "high",
+            "label": "估值上沿",
+            "pe": 8.4,
+            "marketCapYi": 19455.710101219294
+          }
+        ],
+        "heatmapPe": [
+          8.4,
+          7.7,
+          7,
+          6.3,
+          5.6
+        ]
+      },
+      "institutionReferences": [
+        {
+          "institution": "未来资产证券 · 9 月观点",
+          "date": "2026-09-07",
+          "targetOrdinaryShareKrw": 3100000,
+          "valuationMethod": "公开报告收录页列出目标价 310 万韩元；未取得可逐季核验的完整归母净利润路径，因此不混入下方 6 月版四季模型。",
+          "source": "https://stockreport.kr/reports/stock/16616"
+        },
+        {
+          "institution": "未来资产证券",
+          "date": "2026-06-09",
+          "forecast2027ParentNetProfitTrillionKrw": 332.32,
+          "targetOrdinaryShareKrw": 3800000,
+          "forecast2027EpsKrw": 466282,
+          "impliedTargetPe2027": 8.15,
+          "valuationMethod": "原报告目标价采用 12 个月前瞻 P/B；8.15× 为目标价除以 2027 年 EPS 的本站换算值。",
+          "source": "https://securities.miraeasset.com/bbs/download/2145136.pdf?attachmentId=2145136"
+        },
+        {
+          "institution": "KB 证券",
+          "date": "2026-05-29",
+          "forecast2027ParentNetProfitTrillionKrw": 386.259,
+          "targetOrdinaryShareKrw": 3800000,
+          "forecast2027EpsKrw": 541965,
+          "impliedTargetPe2027": 7.01,
+          "valuationMethod": "原报告目标价采用 P/B-ROE；7.01× 为目标价除以 2027 年 EPS 的本站换算值。",
+          "source": "https://rdata.kbsec.com/pdf_data/20260528173943487E.pdf"
+        },
+        {
+          "institution": "William Blair",
+          "date": "2026-08-04",
+          "forecast2026EpsUsd": 246.9,
+          "forecast2027EpsUsd": 300.72,
+          "valuationMethod": "公开摘要给出美元 EPS 预测，未提供季度净利润或目标 PE；未并入本站四季利润路径与估值情景。",
+          "source": "https://www.williamblair.com/News/SK-hynix-Inc-Research-Initiation"
+        },
+        {
+          "institution": "未来资产证券 · 更新观点",
+          "date": "2026-08-14",
+          "targetOrdinaryShareKrw": 2800000,
+          "observedForwardPe": 3.9,
+          "valuationMethod": "报告列出的 3.9× 是当时股价对应的 12 个月前瞻 PE，并非目标 PE；目标价为 280 万韩元。",
+          "source": "https://securities.miraeasset.com/bbs/board/message/view.do?categoryId=1533&messageId=2342049"
+        }
+      ],
+      "sources": [
+        {
+          "label": "SKHY 美元行情",
+          "url": "https://finance.yahoo.com/quote/SKHY/"
+        },
+        {
+          "label": "ADS 比例及发行后股数",
+          "url": "https://www.sec.gov/Archives/edgar/data/2120882/000119312526299963/d32785d424b4.htm"
+        },
+        {
+          "label": "公司业绩公告",
+          "url": "https://www.sec.gov/Archives/edgar/data/2120882/000119312526321989/d115239d6k.htm"
+        },
+        {
+          "label": "未来资产预测",
+          "url": "https://securities.miraeasset.com/bbs/download/2145136.pdf?attachmentId=2145136"
+        },
+        {
+          "label": "KB 证券参考",
+          "url": "https://rdata.kbsec.com/pdf_data/20260528173943487E.pdf"
+        },
+        {
+          "label": "欧央行汇率",
+          "url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/eurofxref-graph-krw.en.html"
+        }
+      ],
+      "sourceInputs": {
+        "primarySymbol": "000660.KS",
+        "currency": "KRW",
+        "unit": "万亿韩元",
+        "listing": {
+          "market": "NASDAQ ADR",
+          "adsToOrdinaryShare": 0.1,
+          "ordinarySharesOutstandingAfterOffering": 728865500,
+          "shareCountDate": "2026-07-10",
+          "source": "https://www.sec.gov/Archives/edgar/data/2120882/000119312526299963/d32785d424b4.htm"
+        },
+        "displayFx": {
+          "date": "2026-09-25",
+          "eurUsd": 1.1403,
+          "eurKrw": 1545.16,
+          "source": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/eurofxref-graph-krw.en.html",
+          "usdSource": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/eurofxref-graph-usd.en.html",
+          "method": "同日欧央行参考汇率：1 欧元 = 1.1403 美元、1 欧元 = 1545.16 韩元；交叉汇率约 1 美元 = 1355.05 韩元。所有美元值均按这一个固定汇率换算，并非财报原币种或实时汇率。"
+        },
+        "actualQuarters": [
+          {
+            "quarter": "2026 Q1",
+            "revenueTrillionKrw": 52.5763,
+            "operatingProfitTrillionKrw": 37.6103,
+            "parentNetProfitTrillionKrw": 40.330176,
+            "source": "https://www.sec.gov/Archives/edgar/data/2120882/000119312526321989/d115239d6k.htm"
+          },
+          {
+            "quarter": "2026 Q2",
+            "revenueTrillionKrw": 79.3187,
+            "operatingProfitTrillionKrw": 60.5426,
+            "parentNetProfitTrillionKrw": 93.820236,
+            "source": "https://www.sec.gov/Archives/edgar/data/2120882/000119312526321989/d115239d6k.htm",
+            "note": "当季包含大额投资资产处置及估值收益；不把该项一次性收益外推到未来四季。"
+          }
+        ],
+        "forecast": {
+          "sourceInstitution": "Mirae Asset Securities",
+          "sourceDate": "2026-06-09",
+          "source": "https://securities.miraeasset.com/bbs/download/2145136.pdf?attachmentId=2145136",
+          "method": "机构直接预测季度营业利润；本站按同一报告相应年度的归母净利润／营业利润比例换算季度归母净利润。换算值并非机构直接发布的季度净利润，也不是市场一致预期。",
+          "annualInputs": [
+            {
+              "year": 2026,
+              "operatingProfitTrillionKrw": 299.132,
+              "parentNetProfitTrillionKrw": 235.283
+            },
+            {
+              "year": 2027,
+              "operatingProfitTrillionKrw": 434.877,
+              "parentNetProfitTrillionKrw": 332.32
+            }
+          ],
+          "quarters": [
+            {
+              "quarter": "2026 Q3",
+              "year": 2026,
+              "revenueTrillionKrw": 108.6,
+              "operatingProfitTrillionKrw": 88.0,
+              "derivedParentNetProfitTrillionKrw": 69.22
+            },
+            {
+              "quarter": "2026 Q4",
+              "year": 2026,
+              "revenueTrillionKrw": 126.1,
+              "operatingProfitTrillionKrw": 102.9,
+              "derivedParentNetProfitTrillionKrw": 80.94
+            },
+            {
+              "quarter": "2027 Q1",
+              "year": 2027,
+              "revenueTrillionKrw": 129.8,
+              "operatingProfitTrillionKrw": 104.8,
+              "derivedParentNetProfitTrillionKrw": 80.09
+            },
+            {
+              "quarter": "2027 Q2",
+              "year": 2027,
+              "revenueTrillionKrw": 136.5,
+              "operatingProfitTrillionKrw": 109.4,
+              "derivedParentNetProfitTrillionKrw": 83.6
+            }
+          ],
+          "forwardFourQuarterParentNetProfitTrillionKrw": 313.85
+        },
+        "valuation": {
+          "basis": "未来四季换算归母净利润 × 研究 PE；先算公司整体韩元市值，再按同日参考汇率换成美元。每 ADR 模型价值按招股文件披露的发行后 728,865,500 股和 1 ADS = 0.1 普通股换算；后续回购可能改变实际流通股数。PE 是本站研究假设。",
+          "scenarioBandRelative": 0.2,
+          "scenarios": [
+            {
+              "key": "low",
+              "label": "估值下沿",
+              "pe": 5.6,
+              "marketCapTrillionKrw": 1757.56
+            },
+            {
+              "key": "base",
+              "label": "基准估值",
+              "pe": 7.0,
+              "marketCapTrillionKrw": 2196.95
+            },
+            {
+              "key": "high",
+              "label": "估值上沿",
+              "pe": 8.4,
+              "marketCapTrillionKrw": 2636.34
+            }
+          ]
+        },
+        "notes": [
+          "2026 Q2 归母净利润含投资资产相关一次性收益；图中保留披露值，估值不将其纳入未来四季。",
+          "用于季度预测路径的机构报告发表于 2026 Q2 正式业绩前，属于有日期的研究快照；机构已有后续观点，但尚未从中取得可逐季核验的完整净利润路径，因此没有与旧版季度数字混算。"
+        ]
+      }
+    }
+  ]
+}

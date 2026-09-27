@@ -1,0 +1,339 @@
+{
+  "symbol": "SKHY",
+  "currency": "USD",
+  "fetchedAtUtc": "2026-09-27T14:53:17+00:00",
+  "basis": "SKHY ADR 每日收盘价 × 固定发行后普通股数 ÷ 0.1。",
+  "points": [
+    {
+      "date": "2026-07-10",
+      "close": 168.01,
+      "shares": 728865500,
+      "marketCapYi": 12245.6693
+    },
+    {
+      "date": "2026-07-13",
+      "close": 152.35,
+      "shares": 728865500,
+      "marketCapYi": 11104.2659
+    },
+    {
+      "date": "2026-07-14",
+      "close": 193.92,
+      "shares": 728865500,
+      "marketCapYi": 14134.1598
+    },
+    {
+      "date": "2026-07-15",
+      "close": 176.46,
+      "shares": 728865500,
+      "marketCapYi": 12861.5606
+    },
+    {
+      "date": "2026-07-16",
+      "close": 152.31,
+      "shares": 728865500,
+      "marketCapYi": 11101.3504
+    },
+    {
+      "date": "2026-07-17",
+      "close": 154.03,
+      "shares": 728865500,
+      "marketCapYi": 11226.7153
+    },
+    {
+      "date": "2026-07-20",
+      "close": 151.16,
+      "shares": 728865500,
+      "marketCapYi": 11017.5309
+    },
+    {
+      "date": "2026-07-21",
+      "close": 171.94,
+      "shares": 728865500,
+      "marketCapYi": 12532.1134
+    },
+    {
+      "date": "2026-07-22",
+      "close": 165.27,
+      "shares": 728865500,
+      "marketCapYi": 12045.9601
+    },
+    {
+      "date": "2026-07-23",
+      "close": 169.5,
+      "shares": 728865500,
+      "marketCapYi": 12354.2702
+    },
+    {
+      "date": "2026-07-24",
+      "close": 154.57,
+      "shares": 728865500,
+      "marketCapYi": 11266.074
+    },
+    {
+      "date": "2026-07-27",
+      "close": 143.02,
+      "shares": 728865500,
+      "marketCapYi": 10424.2344
+    },
+    {
+      "date": "2026-07-28",
+      "close": 130.17,
+      "shares": 728865500,
+      "marketCapYi": 9487.6422
+    },
+    {
+      "date": "2026-07-29",
+      "close": 126.79,
+      "shares": 728865500,
+      "marketCapYi": 9241.2857
+    },
+    {
+      "date": "2026-07-30",
+      "close": 149.0,
+      "shares": 728865500,
+      "marketCapYi": 10860.096
+    },
+    {
+      "date": "2026-07-31",
+      "close": 143.73,
+      "shares": 728865500,
+      "marketCapYi": 10475.9838
+    },
+    {
+      "date": "2026-08-03",
+      "close": 142.72,
+      "shares": 728865500,
+      "marketCapYi": 10402.3684
+    },
+    {
+      "date": "2026-08-04",
+      "close": 154.38,
+      "shares": 728865500,
+      "marketCapYi": 11252.2256
+    },
+    {
+      "date": "2026-08-05",
+      "close": 151.03,
+      "shares": 728865500,
+      "marketCapYi": 11008.0556
+    },
+    {
+      "date": "2026-08-06",
+      "close": 143.53,
+      "shares": 728865500,
+      "marketCapYi": 10461.4065
+    },
+    {
+      "date": "2026-08-07",
+      "close": 137.91,
+      "shares": 728865500,
+      "marketCapYi": 10051.7841
+    },
+    {
+      "date": "2026-08-10",
+      "close": 135.29,
+      "shares": 728865500,
+      "marketCapYi": 9860.8213
+    },
+    {
+      "date": "2026-08-11",
+      "close": 141.65,
+      "shares": 728865500,
+      "marketCapYi": 10324.3798
+    },
+    {
+      "date": "2026-08-12",
+      "close": 154.41,
+      "shares": 728865500,
+      "marketCapYi": 11254.4122
+    },
+    {
+      "date": "2026-08-13",
+      "close": 165.67,
+      "shares": 728865500,
+      "marketCapYi": 12075.1147
+    },
+    {
+      "date": "2026-08-14",
+      "close": 166.33,
+      "shares": 728865500,
+      "marketCapYi": 12123.2199
+    },
+    {
+      "date": "2026-08-17",
+      "close": 171.38,
+      "shares": 728865500,
+      "marketCapYi": 12491.2969
+    },
+    {
+      "date": "2026-08-18",
+      "close": 155.62,
+      "shares": 728865500,
+      "marketCapYi": 11342.6049
+    },
+    {
+      "date": "2026-08-19",
+      "close": 156.16,
+      "shares": 728865500,
+      "marketCapYi": 11381.9636
+    },
+    {
+      "date": "2026-08-20",
+      "close": 163.08,
+      "shares": 728865500,
+      "marketCapYi": 11886.3386
+    },
+    {
+      "date": "2026-08-21",
+      "close": 163.41,
+      "shares": 728865500,
+      "marketCapYi": 11910.3911
+    },
+    {
+      "date": "2026-08-24",
+      "close": 155.37,
+      "shares": 728865500,
+      "marketCapYi": 11324.3833
+    },
+    {
+      "date": "2026-08-25",
+      "close": 159.53,
+      "shares": 728865500,
+      "marketCapYi": 11627.5913
+    },
+    {
+      "date": "2026-08-26",
+      "close": 158.02,
+      "shares": 728865500,
+      "marketCapYi": 11517.5326
+    },
+    {
+      "date": "2026-08-27",
+      "close": 161.61,
+      "shares": 728865500,
+      "marketCapYi": 11779.1953
+    },
+    {
+      "date": "2026-08-28",
+      "close": 161.04,
+      "shares": 728865500,
+      "marketCapYi": 11737.65
+    },
+    {
+      "date": "2026-08-31",
+      "close": 164.58,
+      "shares": 728865500,
+      "marketCapYi": 11995.6684
+    },
+    {
+      "date": "2026-09-01",
+      "close": 160.78,
+      "shares": 728865500,
+      "marketCapYi": 11718.6995
+    },
+    {
+      "date": "2026-09-02",
+      "close": 164.98,
+      "shares": 728865500,
+      "marketCapYi": 12024.823
+    },
+    {
+      "date": "2026-09-03",
+      "close": 163.68,
+      "shares": 728865500,
+      "marketCapYi": 11930.0705
+    },
+    {
+      "date": "2026-09-04",
+      "close": 177.0,
+      "shares": 728865500,
+      "marketCapYi": 12900.9194
+    },
+    {
+      "date": "2026-09-08",
+      "close": 185.55,
+      "shares": 728865500,
+      "marketCapYi": 13524.0994
+    },
+    {
+      "date": "2026-09-09",
+      "close": 198.63,
+      "shares": 728865500,
+      "marketCapYi": 14477.4554
+    },
+    {
+      "date": "2026-09-10",
+      "close": 188.3,
+      "shares": 728865500,
+      "marketCapYi": 13724.5374
+    },
+    {
+      "date": "2026-09-11",
+      "close": 190.07,
+      "shares": 728865500,
+      "marketCapYi": 13853.5466
+    },
+    {
+      "date": "2026-09-14",
+      "close": 175.63,
+      "shares": 728865500,
+      "marketCapYi": 12801.0648
+    },
+    {
+      "date": "2026-09-15",
+      "close": 174.83,
+      "shares": 728865500,
+      "marketCapYi": 12742.7555
+    },
+    {
+      "date": "2026-09-16",
+      "close": 174.87,
+      "shares": 728865500,
+      "marketCapYi": 12745.671
+    },
+    {
+      "date": "2026-09-17",
+      "close": 182.99,
+      "shares": 728865500,
+      "marketCapYi": 13337.5098
+    },
+    {
+      "date": "2026-09-18",
+      "close": 187.5,
+      "shares": 728865500,
+      "marketCapYi": 13666.2281
+    },
+    {
+      "date": "2026-09-21",
+      "close": 188.86,
+      "shares": 728865500,
+      "marketCapYi": 13765.3538
+    },
+    {
+      "date": "2026-09-22",
+      "close": 195.37,
+      "shares": 728865500,
+      "marketCapYi": 14239.8453
+    },
+    {
+      "date": "2026-09-23",
+      "close": 189.28,
+      "shares": 728865500,
+      "marketCapYi": 13795.9662
+    },
+    {
+      "date": "2026-09-24",
+      "close": 186.37,
+      "shares": 728865500,
+      "marketCapYi": 13583.8663
+    },
+    {
+      "date": "2026-09-25",
+      "close": 191.56,
+      "shares": 728865500,
+      "marketCapYi": 13962.1475
+    }
+  ],
+  "source": "https://query1.finance.yahoo.com/v8/finance/chart/SKHY?interval=1d&range=6mo"
+}
