@@ -1,13 +1,13 @@
 {
   "symbol": "SKHY",
   "currency": "USD",
-  "price": 174.835,
-  "marketCapYi": 12743.12,
+  "price": 170.1,
+  "marketCapYi": 12398.0022,
   "shares": 728865500,
   "adsRatio": 0.1,
-  "quoteTime": "2026-10-08 10:35:06",
+  "quoteTime": "2026-10-09 10:22:13",
   "timezone": "America/New_York",
-  "fetchedAtUtc": "2026-10-08T14:35:07+00:00",
+  "fetchedAtUtc": "2026-10-09T14:22:17+00:00",
   "source": "https://query1.finance.yahoo.com/v8/finance/chart/SKHY?interval=1d&range=6mo",
   "marketCapMethod": "公司整体市值按 SKHY ADR 美元价格 × 普通股股数 ÷ 0.1 折算。股数固定采用招股文件发行后数值，未反映后续回购；ADR 与韩国普通股可能有价差。",
   "notice": "Yahoo Finance 显示延迟报价；公司总市值为固定股数折算值，非数据商直接报出的市值。"
