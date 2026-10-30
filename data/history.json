@@ -1,15 +1,9 @@
 {
   "symbol": "300308.SZ",
   "currency": "CNY",
-  "fetchedAtUtc": "2026-10-29T14:19:13+00:00",
+  "fetchedAtUtc": "2026-10-30T14:08:03+00:00",
   "basis": "A 股每日收盘价 × 当日公司总股本；股本变动按披露日期处理。",
   "points": [
-    {
-      "date": "2026-01-28",
-      "close": 628.0,
-      "shares": 1111118334,
-      "marketCapYi": 6977.8231
-    },
     {
       "date": "2026-01-29",
       "close": 613.85,
@@ -1083,6 +1077,12 @@
       "close": 582.05,
       "shares": 1177909641,
       "marketCapYi": 6856.0231
+    },
+    {
+      "date": "2026-10-30",
+      "close": 553.0,
+      "shares": 1177909641,
+      "marketCapYi": 6513.8403
     }
   ],
   "source": "https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sz300308%2Cday%2C%2C%2C180%2C"
