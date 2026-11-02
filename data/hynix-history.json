@@ -1,7 +1,7 @@
 {
   "symbol": "SKHY",
   "currency": "USD",
-  "fetchedAtUtc": "2026-10-30T14:08:03+00:00",
+  "fetchedAtUtc": "2026-11-02T17:04:23+00:00",
   "basis": "SKHY ADR 每日收盘价 × 固定发行后普通股数 ÷ 0.1。",
   "points": [
     {
@@ -480,9 +480,15 @@
     },
     {
       "date": "2026-10-30",
-      "close": 152.6436,
+      "close": 149.21,
       "shares": 728865500,
-      "marketCapYi": 11125.6654
+      "marketCapYi": 10875.4021
+    },
+    {
+      "date": "2026-11-02",
+      "close": 151.84,
+      "shares": 728865500,
+      "marketCapYi": 11067.0938
     }
   ],
   "source": "https://query1.finance.yahoo.com/v8/finance/chart/SKHY?interval=1d&range=6mo"
