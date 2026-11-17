@@ -1,12 +1,12 @@
 {
   "symbol": "300308.SZ",
   "currency": "CNY",
-  "price": 408.97,
-  "marketCapYi": 4817.3,
+  "price": 393.0,
+  "marketCapYi": 4629.18,
   "shares": 1177909641,
-  "quoteTime": "2026-11-16 16:14:39",
+  "quoteTime": "2026-11-17 16:14:57",
   "timezone": "Asia/Shanghai",
-  "fetchedAtUtc": "2026-11-16T17:00:16+00:00",
+  "fetchedAtUtc": "2026-11-17T16:52:46+00:00",
   "source": "https://qt.gtimg.cn/q=sz300308",
   "marketCapMethod": "总市值采用 A 股报价 × 公司总股本；行情接口可能延迟。",
   "notice": "公开行情接口可能延迟或中断；报价时间以接口返回值为准。"
